@@ -3,22 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>🐸</title>
     <style>
         body {
             margin: 20px;
             font-family: 'Arial Narrow', Arial, sans-serif;
+            font-size: 1rem; /* Tamaño de fuente base */
         }
 
-      
+        /* Tamaño de texto más grande para pantallas grandes */
+        @media (min-width: 992px) {
+            body {
+                font-size: 1.2rem; /* Aumenta el tamaño de la fuente para pantallas grandes */
+            }
+        }
 
-      ul {
-         list-style-type: none; /* Elimina los puntos de viñeta */
-        padding: 0;
-      }
-
-
-      
         /* Ajustar el margen para pantallas pequeñas */
         @media (max-width: 600px) {
             body {
@@ -32,18 +31,29 @@
                 margin: 15px; /* Ajusta el margen en pantallas medianas */
             }
         }
+
+        ul {
+            list-style-type: none; /* Elimina los puntos de viñeta */
+            padding: 0; /* Opcional: elimina el padding predeterminado */
+            margin: 0; /* Opcional: elimina el margen predeterminado */
+        }
+
+        /* Tamaño de texto específico para <marquee> y <h3> */
+        marquee, h3 {
+            font-size: 1.1rem; /* Ajusta el tamaño del texto del marquee y h3 */
+        }
       
     </style>
 </head>
 <body>
-    <marquee>This is a website born with the goal of bringing HTML into everyday spaces and get commoners to experiment and play with it.</marquee>
+    <marquee>this is a website born with the goal of bringing HTML into everyday spaces and get commoners to experiment and play with it</marquee>
 
-    <h3>At Frogciti.es we value:</h3>
+    <h3>at frogciti.es we value:</h3>
 
     <ul>
-        <li>Honesty: Authentic self-expression through your own websites</li>
-        <li>Playfulness: Encouraging a light-hearted approach to web making</li>
-        <li>Rawness: Focusing on the beauty of pure HTML and CSS</li>
+        <li>honesty: authentic self-expression through your own websites</li>
+        <li>playfulness: encouraging a light-hearted approach to web making</li>
+        <li>rawness: focusing on the beauty of pure HTML and CSS</li>
     </ul>
 
     <img src="https://web.archive.org/web/20091019003543/http://www.geocities.com/marc_smyth/dancfrogright.gif"/>
