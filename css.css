@@ -41,9 +41,18 @@ marquee, h3 {
     bottom: 10px;
     right: 10px;
     text-decoration: none;
+    white-space: nowrap; /* Evita que los enlaces se rompan en líneas nuevas */
 }
 
-.language-links:hover {
+.language-links a {
+    display: inline; /* Los enlaces aparecerán en la misma línea */
+    color: ivory; /* Color inicial de los enlaces */
+    margin-right: 10px; /* Espaciado entre los enlaces */
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.language-links a:hover {
     color: lawngreen; /* Cambia a verde cuando pasas el cursor */
 }
 
