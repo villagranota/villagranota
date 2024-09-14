@@ -61,9 +61,9 @@ marquee, h3 {
 }
 
 .language-links a:active {
-    color: ivory; /* Asegúrate de que el enlace activo no cambie de color */
+    color: lawngreen; /* Asegúrate de que el enlace activo no cambie de color */
 }
 
 .language-links a.active {
-    color: ivory; /* Asegúrate de que el enlace activo no cambie de color */
+    color: lawngreen; /* Asegúrate de que el enlace activo no cambie de color */
 }
