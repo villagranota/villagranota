@@ -39,7 +39,12 @@ marquee, h3 {
 .language-links {
     position: fixed;
     bottom: 10px;
-    left: 10px;
+    right: 10px;
+    text-decoration: none;
+}
+
+.language-links:hover {
+    color: lawngreen; /* Cambia a verde cuando pasas el cursor */
 }
 
 .language-links a {
