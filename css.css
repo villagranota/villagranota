@@ -45,23 +45,14 @@ marquee, h3 {
 }
 
 .language-links a {
-    display: inline; /* Los enlaces aparecerán en la misma línea */
+    display: flex; /* Los enlaces aparecerán en la misma línea */
     color: ivory; /* Color inicial de los enlaces */
-    margin-right: 10px; /* Espaciado entre los enlaces */
-    font-weight: bold;
+    gap: 10px;
     text-decoration: none;
 }
 
 .language-links a:hover {
     color: lawngreen; /* Cambia a verde cuando pasas el cursor */
-}
-
-.language-links a {
-    display: block;
-    color: lawngreen;
-    margin-bottom: 5px;
-    font-weight: bold;
-    text-decoration: none;
 }
 
 .language-links a:hover {
