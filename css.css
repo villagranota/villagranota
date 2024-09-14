@@ -59,3 +59,11 @@ marquee, h3 {
 .language-links a:visited {
     color: ivory; /* Cambia a verde cuando pasas el cursor */
 }
+
+.language-links a:active {
+    color: ivory; /* Asegúrate de que el enlace activo no cambie de color */
+}
+
+.language-links a.active {
+    color: ivory; /* Asegúrate de que el enlace activo no cambie de color */
+}
