@@ -44,7 +44,7 @@ marquee, h3 {
     right: 10px;
 }
 
-.language-links {
+.language-links a{
     text-decoration: none;
 }
 
