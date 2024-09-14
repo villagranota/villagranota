@@ -38,23 +38,18 @@ marquee, h3 {
 /* Estilos para los enlaces de idioma */
 .language-links {
     position: fixed;
+    color: ivory; /* Color inicial de los enlaces */
+    gap: 10px;
     bottom: 10px;
     right: 10px;
     text-decoration: none;
-    white-space: nowrap; /* Evita que los enlaces se rompan en líneas nuevas */
 }
 
-.language-links a {
+.footer {
     display: flex; /* Los enlaces aparecerán en la misma línea */
-    color: ivory; /* Color inicial de los enlaces */
-    gap: 10px;
-    text-decoration: none;
 }
 
 .language-links a:hover {
     color: lawngreen; /* Cambia a verde cuando pasas el cursor */
 }
 
-.language-links a:hover {
-    color: lawngreen; /* Cambia de color al pasar el ratón */
-}
