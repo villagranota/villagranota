@@ -31,7 +31,25 @@ ul {
     margin: 0; /* Opcional: elimina el margen predeterminado */
 }
 
-/* Tamaño de texto específico para <marquee> y <h3> */
 marquee, h3 {
     font-size: 1.1rem; /* Ajusta el tamaño del texto del marquee y h3 */
+}
+
+/* Estilos para los enlaces de idioma */
+.language-links {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+}
+
+.language-links a {
+    display: block;
+    color: lawngreen;
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.language-links a:hover {
+    color: lightgreen; /* Cambia de color al pasar el ratón */
 }
