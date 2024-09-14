@@ -55,3 +55,7 @@ marquee, h3 {
 .language-links a:hover {
     color: lawngreen; /* Cambia a verde cuando pasas el cursor */
 }
+
+.language-links a:visited {
+    color: ivory; /* Cambia a verde cuando pasas el cursor */
+}
