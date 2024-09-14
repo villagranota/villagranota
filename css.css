@@ -38,7 +38,6 @@ marquee, h3 {
 /* Estilos para los enlaces de idioma */
 .language-links {
     position: fixed;
-    color: ivory; /* Color inicial de los enlaces */
     gap: 10px;
     bottom: 10px;
     right: 10px;
@@ -46,6 +45,7 @@ marquee, h3 {
 
 .language-links a{
     text-decoration: none;
+    color: ivory; /* Color inicial de los enlaces */
 }
 
 .footer {
