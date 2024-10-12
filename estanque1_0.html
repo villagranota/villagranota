@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css.css">
+    <title>🐸</title>
+
+    <style>
+        .wave-container {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+        .wave-line {
+            font-size: 1.5em;
+            position: absolute;
+            white-space: nowrap;
+            transform: rotate(calc(15deg * var(--rotation)));
+        }
+        }
+    </style>
+</head>
+
+<body>
+    <marquee>this is a website born with the goal of bringing <span class="verde">HTML</span> into everyday spaces and
+        get commoners to experiment and play with it</marquee>
+
+    <div class="container">
+        <p>at frogciti.es we value</p>
+
+        <ul>
+            <li><span class="verde">honesty</span> authentic self-expression through your own websites</li>
+            <li><span class="verde">playfulness</span> encouraging a light-hearted approach to web making</li>
+            <li><span class="verde">rawness</span> focusing on the beauty of pure HTML and CSS</li>
+        </ul>
+    </div>
+
+    <div class="wave-container" id="wave-container"></div>
+
+    <div class="footer">
+        <div class="language-links">
+            <a href="indexCat.html">cat</a>
+            <a href="#">en</a>
+            <a href="indexEs.html">es</a>
+        </div>
+    </div>
+
+
+    <script>
+        function generateWaves() {
+            const waveContainer = document.getElementById('wave-container');
+            const waveSymbols = ['~', '~~', '~~~', '~~~~'];
+            const waveLinesCount = Math.ceil(window.innerHeight / 30);
+            const waveLength = Math.ceil(window.innerWidth / 20);
+
+            waveContainer.innerHTML = '';
+            for (let i = 0; i < waveLinesCount; i++) {
+                let waveLine = document.createElement('div');
+                waveLine.className = 'wave-line';
+                waveLine.style.top = `${Math.random() * window.innerHeight}px`;
+                waveLine.style.left = `${Math.random() * window.innerWidth}px`;
+                waveLine.style.setProperty('--rotation', Math.floor(Math.random() * 5 - 2));
+
+                // Add randomness to the wave pattern to make it look more natural
+                let waveText = '';
+                for (let j = 0; j < waveLength; j++) {
+                    if (Math.random() > 0.6) {
+                        waveText += '  '; // Add some gaps to make it irregular
+                    } else {
+                        waveText += waveSymbols[Math.floor(Math.random() * waveSymbols.length)] + ' ';
+                    }
+                }
+
+                waveLine.textContent = waveText;
+                waveContainer.appendChild(waveLine);
+            }
+        }
+
+        window.onload = generateWaves;
+        window.onresize = generateWaves;
+    </script>
+
+</body>
+
+</html>
