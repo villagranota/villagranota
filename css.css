@@ -12,26 +12,12 @@ marquee {
 }
 
 .container {
-    margin: 20px;
+    margin: 10px;
 }
 
 span.verde {
     color: lawngreen;
     font-weight: bold;
-}
-
-/* Ajustar el margen para pantallas pequeñas */
-@media (max-width: 600px) {
-    body {
-        margin: 10px; /* Reduce el margen en pantallas pequeñas */
-    }
-}
-
-/* Ajustar el margen para pantallas medianas */
-@media (max-width: 992px) {
-    body {
-        margin: 15px; /* Ajusta el margen en pantallas medianas */
-    }
 }
 
 ul {
