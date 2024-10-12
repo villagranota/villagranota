@@ -1,9 +1,18 @@
 body {
-    margin: 20px;
     font-family: 'Arial Narrow', Arial, sans-serif;
     color: ivory;
     font-size: 1rem; /* Tamaño de fuente base */
     background-color: #18003c;
+    margin: 0px;
+}
+
+marquee {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.container {
+    margin: 20px;
 }
 
 span.verde {
