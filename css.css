@@ -76,3 +76,19 @@ marquee, h3 {
 .language-links a.active {
     color: lawngreen; /* Asegúrate de que el enlace activo no cambie de color */
 }
+
+
+.wave-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.wave-line {
+    font-size: 1.5em;
+    position: absolute;
+    white-space: nowrap;
+}
