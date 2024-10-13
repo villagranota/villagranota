@@ -1,7 +1,8 @@
 function generateWaves() {
     const waveContainer = document.getElementById('wave-container');
     const waveSymbols = ['~', '~~', '~~~', '~~~~'];
-    const waveLinesCount = Math.ceil(window.innerHeight / 30);
+    const isMobile = window.innerWidth <= 768; // Consider screens <= 768px as mobile
+    const waveLinesCount = Math.ceil(window.innerHeight / (isMobile ? 80 : 30)); // Fewer waves on mobile
 
     waveContainer.innerHTML = '';
     for (let i = 0; i < waveLinesCount; i++) {
@@ -12,7 +13,7 @@ function generateWaves() {
 
         // Add randomness to the wave pattern to make it look more natural
         let waveText = '';
-        const waveLength = Math.floor(Math.random() * 10) + 5; // Random length for each wave line
+        const waveLength = Math.floor(Math.random() * (isMobile ? 7 : 10)) + (isMobile ? 3 : 5); // Shorter waves on mobile
         for (let j = 0; j < waveLength; j++) {
             if (Math.random() > 0.7) {
                 waveText += '    '; // Add more gaps to make it irregular
