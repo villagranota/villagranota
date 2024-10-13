@@ -87,4 +87,11 @@ marquee, h3 {
     font-size: 1.5em;
     position: absolute;
     white-space: nowrap;
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    .wave-line {
+        font-size: 12px;
+    }
 }
